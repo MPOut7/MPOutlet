@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPOutlet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Заглавна лента -->
+    <header id="main-header" >
+        <img src="https://i.postimg.cc/rptbrJ2p/mp.png" alt="Лого MPOutlet" class="site-logo">
+
+        <nav id="main-nav" >
+            <ul>
+                <li><a href="#nike">Nike</a></li>
+                <li><a href="#adidas">Adidas</a></li>
+                <li><a href="#puma">Puma</a></li>
+                <li><a href="#guess">Guess</a></li>
+                <li><a href="#calvin-klein">Calvin Klein</a></li>
+                <li><a href="#promotions">Промоции</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Секция Nike -->
+    <section id="nike">
+        <h2>Nike</h2>
+        <ul>
+            <li><a href="#nike-men">Мъже</a></li>
+            <li><a href="#nike-women">Жени</a></li>
+        </ul>
+
+        <!-- Мъже (Nike) -->
+        <article id="nike-men">
+            <h3>Мъже</h3>
+            <ul>
+                <li><a href="#nike-clothes-men">Дрехи</a></li>
+                <li><a href="#nike-shoes-men">Обувки</a></li>
+                <li><a href="#nike-accessories-men">Аксесоари</a></li>
+            </ul>
+            <article id="nike-clothes-men">
+                <h4>Дрехи</h4>
+                <img src="https://i.postimg.cc/ZRPrMB7p/Nike-Tech-Fleece.jpg" alt="Nike Дрехи за мъже" width="320" height="240">
+                <p>Оригинални спортни дрехи Nike за мъже.</p>
+                <section id="nike-mens-clothes">
+    <h3>Мъже - Дрехи</h3>
+    <div class="products-grid">
+        <!-- Тениски -->
+        <div class="product" onclick="showModal('teniska1')">
+            <img src="https://cdn.aboutstatic.com/file/images/d93df9c9ef1aebf65f8188d7adbc0488.png" alt="Nike Sportswear Суичър"class="product-image"> 
+            <p>Nike Sportswear Суичър</p>
+        </div>
+        <div class="product" onclick="showModal('teniska2')">
+            <img src="https://cdn.aboutstatic.com/file/images/d31589c103951950700d6ed6350e82c8.png" alt="Nike Sportswear Суичър 'CLUB'"class="product-image">
+            <p>Nike Sportswear Суичър 'CLUB'</p>
+        </div>
+        <div class="product" onclick="showModal('teniska3')">
+            <img src="https://cdn.aboutstatic.com/file/images/6d8ffd463e9c80c893ef60c44fdef3a7.png" alt="Тениска 3"class="product-image">
+            <p>Nike Sportswear Regular fit Суичър 'Club'</p>
+        </div>
+
+        <!-- Горнища -->
+        <div class="product" onclick="showModal('gornishte1')">
+            <img src="https://cdn.aboutstatic.com/file/images/64fb6fd00a1ff0e04c56bd1e6d23b4f3.jpg?quality=75&height=800&width=600" alt="Nike Sportswear Тениска в Светлокафяво">
+            <p>Nike Sportswear Тениска в Светлокафяво</p>
+        </div>
+        <div class="product" onclick="showModal('gornishte2')">
+            <img src="https://cdn.aboutstatic.com/file/images/002c9aee87b9b0ad3ade88cd0ae6bee8.jpg?quality=75&height=800&width=600" alt="Nike Sportswear Тениска в Смарагдово Зелено">
+            <p>Nike Sportswear Тениска в Смарагдово Зелено</p>
+        </div>
+        <div class="product" onclick="showModal('gornishte3')">
+            <img src="https://cdn.aboutstatic.com/file/images/e487bce542b15c93edb4a069875b6a9d.jpg?quality=75&height=800&width=600" alt="Nike Sportswear Тениска 'M90 OC HBR' в Черно
+">
+            <p>Nike Sportswear Тениска 'M90 OC HBR' в Черно
+</p>
+        </div>
+
+        <!-- Долнища -->
+        <div class="product" onclick="showModal('dolnishte1')">
+            <img src="https://cdn.aboutstatic.com/file/images/3ec73920ec6715e4be679b48dd383e26.jpg?quality=75&height=800&width=600" alt="Nike Sportswear Tapered Leg Панталон 'Club Fleece'">
+            <p>Nike Sportswear Tapered Leg Панталон 'Club Fleece'</p>
+        </div>
+        <div class="product" onclick="showModal('dolnishte2')">
+            <img src="https://cdn.aboutstatic.com/file/images/be418c4c68b510bf575bccf70cb4f65c.jpg?quality=75&height=800&width=600" alt="Nike Sportswear Tapered Leg Карго панталон 'AIR' в Морскосиньо">
+            <p>Nike Sportswear Tapered Leg Карго панталон 'AIR' в Морскосиньо
+</p>
+        </div>
+        <div class="product" onclick="showModal('dolnishte3')">
+            <img src="https://cdn.aboutstatic.com/file/images/04b198ea75cb1438e2985bb9830d379f.jpg?quality=75&height=800&width=600" alt="Nike Sportswear шорти 'CLUB' ">
+            <p>Nike Sportswear шорти 'CLUB'</p>
+        </div>
+    </div>
+
+    <!-- Модален прозорец за информация -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+</section>
+
+            </article>
+            <article id="nike-shoes-men">
+                <h4>Обувки</h4>
+                <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/a22e7bb8-4517-4349-80d4-fc184c4c72db/men-s-shoes-clothing-accessories.jpg" alt="Nike Обувки за мъже" width="320" height="240">
+                <p>Качествени спортни обувки Nike за мъже.</p>
+                             <section id="nike-mens-shoes">
+    <h3>Мъже - Обувки</h3>
+    <div class="products-grid">
+        <!-- Обувки Спортни -->
+        <div class="product" onclick="showModal('obuvkasport1')">
+            <img src="https://cdn.aboutstatic.com/file/5bd3d7e41fd5b2d702c1f93ed2bc2bd9?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="'Air VaporMax Plus' в Черно "class="product-image"> 
+            <p> 'Air VaporMax Plus' в Черно </p>
+        </div>
+        <div class="product" onclick="showModal('obuvkasport2')">
+            <img src="https://cdn.aboutstatic.com/file/images/903cd97c4d826eb13f2e8df50d67e44c.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'AIR MAX 90' в Сиво"class="product-image">
+            <p> 'AIR MAX 90' в Сиво</p>
+        </div>
+        <div class="product" onclick="showModal('obuvkasport3')">
+            <img src="https://cdn.aboutstatic.com/file/images/4a3290fde5a8b439270d1b0fff0d5d04.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" Ниски маратонки 'C1TY' в Нейви Синьо"class="product-image">
+            <p> Ниски маратонки 'C1TY' в Нейви Синьо</p>
+        </div>
+
+        <!-- Обувки ниски -->
+        <div class="product" onclick="showModal('niski1')">
+            <img src="https://cdn.aboutstatic.com/file/images/75d158a29037350f65a5f378c5395772.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="'AIR FORCE 1 '07 LV8' в Опушено Синьо" class="product-image">
+            <p>'AIR FORCE 1 '07 LV8' в Опушено Синьо</p>
+        </div>
+        <div class="product" onclick="showModal('niski2')">
+            <img src="https://cdn.aboutstatic.com/file/images/e196c2dbfec64ab42a86e4b1eb85aba9.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="'C1TY' в Капучино" class="product-image">
+            <p>'C1TY' в Капучино</p>
+        </div>
+        <div class="product" onclick="showModal('niski3')">
+            <img src="https://cdn.aboutstatic.com/file/images/4cb572c7b306f7dd98505531078e42c8.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'P-6000 SE' в Винено Червено">
+            <p> 'P-6000 SE' в Винено Червено</p>
+        </div>
+
+        <!-- Маратонки -->
+        <div class="product" onclick="showModal('maratonka1')">
+            <img src="https://cdn.aboutstatic.com/file/images/a06cad8cf81e0053e3f4b1537d15c011.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="Nike Sportswear Ниски маратонки в Кафяво">
+            <p>Nike Sportswear Ниски маратонки в Кафяво</p>
+        </div>
+        <div class="product" onclick="showModal('maratonka2')">
+            <img src="https://cdn.aboutstatic.com/file/images/f091898832dd30a942754f6501b8f718.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Ниски маратонки 'P-6000' в Каки">
+            <p>Ниски маратонки 'P-6000' в Каки</p>
+        </div>
+        <div class="product" onclick="showModal('maratonka3')">
+            <img src="https://cdn.aboutstatic.com/file/images/b80821d8cf5bdbfe4d5223e67e546ca5.jpg?quality=75&height=800&width=600" alt=" 'AIR MAX 90' в Черно ">
+            <p> 'AIR MAX 90' в Черно</p>
+        </div>
+    </div>
+
+    <!-- Примерна модална структура -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+    </section>
+    
+     </article>
+            <article id="nike-accessories-men">
+                <h4>Аксесоари</h4>
+                 <img src="https://i.postimg.cc/26y2GJYN/accss.jpg" alt="Nike Аксесоари за мъже" width="320" height="240">
+                 <p>Чанти,чорапи и спортни стоки Nike за мъже.</p>
+       <section id="nike-mens-accessories">
+       <h3>Мъже - Аксесоари </h3>
+    <div class="products-grid">
+ <div class="product" onclick="showModal('chorapi1')">
+            <img src="https://cdn.ozone.bg/media/catalog/product/m/a/mazhki_chorapi_nike_squad_crew_razmer_l_beli_1669818443_0_1.jpg" alt="'Спортни чорапи' в бяло "class="product-image"> 
+            <p> 'Спортни чорапи' в бяло </p>
+            
+             </div>
+        <div class="product" onclick="showModal('chorapi2')">
+            <img src="https://i.postimg.cc/tRFNPfYf/46680c82ccc25a53c00dd1f8815d6a3b.avif" alt=" '3 броя боксерки' цветни"class="product-image">
+            <p> '3 броя боксерки' цветни</p>
+             </div>
+        <div class="product" onclick="showModal('chorapi3')">
+            <img src="https://i.postimg.cc/FK0dBYwx/9f99df483e813669a12db32a205b8af4.avif" alt=" 'Къси Чорапи 3 чифта ' цветни"class="product-image">
+            <p> 'Къси Чорапи 3 чифта ' цветни</p>
+            </div>
+        <div class="product" onclick="showModal('ranici1')">
+            <img src="https://s13emagst.akamaized.net/products/74071/74070569/images/res_8acfb37f145ce3d551d6feaaa01eec6a.jpg?v2" alt=" 'NIKE TEAM Сак NK ACDMY TEAM L' червен"class="product-image">
+            <p> 'NIKE TEAM Сак NK ACDMY TEAM L' червен</p>
+             </div>
+        <div class="product" onclick="showModal('ranici2')">
+            <img src="https://i.postimg.cc/7PdY8HDG/FD5186-366-01.webp" alt=" 'JORDAN Шапка J RISE CAP ' "class="product-image">
+            <p> 'JORDAN Шапка J RISE CAP ' </p>
+             </div>
+        <div class="product" onclick="showModal('ranici3')">
+            <img src="https://i.postimg.cc/GmCRdz2G/images.jpg" alt=" 'Вратарски ръкавици Goalkeeper Match ' "class="product-image">
+            <p> 'Вратарски ръкавици Goalkeeper Match ' </p>
+             </div>
+        <div class="product" onclick="showModal('chanti1')">
+            <img src="https://gfx.r-gol.com/media/res/products/183/191183/465x605/dd0559-478_1.webp" alt=" 'Раница NIKE Elemental Backpack (21L)' "class="product-image">
+            <p> 'Раница NIKE Elemental Backpack (21L)' </p>
+            </div>
+        <div class="product" onclick="showModal('chanti2')">
+            <img src="https://i.postimg.cc/c6qM2RzT/9-A0631-X6-A-600-600px.jpg" alt=" 'Nike Малка чанта JAN AIRBORNE FESTIVAL BAG' "class="product-image">
+            <p> 'Nike Малка чанта JAN AIRBORNE FESTIVAL BAG' </p>
+            </div>
+        <div class="product" onclick="showModal('chanti3')">
+            <img src="https://i.postimg.cc/jdQsDshk/AA00-SAU045-99-X-F2.webp" alt=" 'Кръгъл шал Nike Classic с десен черно' "class="product-image"> <p> 'Кръгъл шал Nike Classic с десен черно' </p>
+             
+            
+            
+    </div>
+        
+  
+
+        <!-- Жени (Nike) -->
+        <article id="nike-women">
+            <h3>Жени</h3>
+            <ul>
+                <li><a href="#nike-clothes-women">Дрехи</a></li>
+                <li><a href="#nike-shoes-women">Обувки</a></li>
+                <li><a href="#nike-accessories-women">Аксесоари</a></li>
+            </ul>
+            <article id="nike-clothes-women">
+                <h4>Дрехи</h4>
+                <img src="https://i.postimg.cc/RFffZ7Tg/e7eef2c53a60559f0803e226e9cec174.jpg" alt="Nike Дрехи за жени" width="320" height="240">
+                <p>Оригинални спортни дрехи Nike за жени.</p>
+                <section id="nike-womens-clotes">
+                <h3>Жени - Дрехи</h3>
+                <div class="products-grid">
+                <!--Блузи-->
+                 <div class="product" onclick="showModal('bluza1')">
+            <img src="https://i.postimg.cc/2yG112L7/c27303ef69f9a5d0e26534ee1cdccd57.avif" alt="Nike Sportswear Суичър 'PHNX FLC' "class="product-image"> 
+            <p>Nike Sportswear Суичър 'PHNX FLC' </p>
+        </div>
+        <div class="product" onclick="showModal('bluza2')">
+            <img src="https://cdn.aboutstatic.com/file/images/5778e97e07b1715b07fdb337c8e3c37f.jpg?quality=75&height=800&width=600" alt="Суичър 'CLUB FLC' "class="product-image"> 
+            <p>Суичър 'CLUB FLC' </p>
+            </div>
+            <div class="product" onclick="showModal('bluza3')">
+            <img src="https://cdn.aboutstatic.com/file/images/444ff4b2d790ee25c87e2dcb82c36a17.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Суичър 'Phoenix Fleece'" class="product-image"> 
+            <p>Суичър 'Phoenix Fleece' </p>
+            </div>
+            <!--Долнища-->
+            <div class="product" onclick="showModal('dolno1')">
+            <img src="https://cdn.aboutstatic.com/file/images/938cdd897cc452b5c684b941de9ac413.jpg?quality=75&height=800&width=600" alt="Tapered Leg Панталон 'PHOENIX FLEECE'" class="product-image"> 
+            <p>Tapered Leg Панталон 'PHOENIX FLEECE' </p>
+            </div>
+            
+            <div class="product" onclick="showModal('dolno2')">
+            <img src="https://cdn.aboutstatic.com/file/images/1eabc1917f6d0da999a3df161ea0a045.jpg?quality=75&height=800&width=600" alt="Tapered Leg Панталон" class="product-image"> 
+            <p>Tapered Leg Панталон </p>
+            </div>
+            <div class="product" onclick="showModal('dolno3')">
+            <img src="https://cdn.aboutstatic.com/file/images/97805f41dd8a2a92a72e7b5e922e6523.jpg?quality=75&height=800&width=600" alt="Skinny Fit Клин 'Essential' " class="product-image"> 
+            <p>Skinny Fit Клин 'Essential'  </p>
+            </div>
+             <div class="product" onclick="showModal('kusi1')">
+            <img src="https://cdn.aboutstatic.com/file/images/5085d1e3a4adbb4c3c74789fbefb1586.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="'Phoenix Fleece'Шорти " class="product-image"> 
+            <p>'Phoenix Fleece'Шорти  </p>
+            </div>
+             <div class="product" onclick="showModal('kusi2')">
+            <img src="https://cdn.aboutstatic.com/file/images/b0c9a56edc3c03fdc17bda7cf6eae5a5.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" Regular'Club Fleece' " class="product-image"> 
+            <p>  Regular 'Club Fleece' </p>
+            </div>
+             <div class="product" onclick="showModal('kusi3')">
+            <img src="https://cdn.aboutstatic.com/file/images/5e44722a18490913a323ac9e83eb9c2d.jpg?quality=75&height=800&width=600" alt=" Nike Sportswear " class="product-image"> 
+            <p> Nike Sportswear </p>
+            </div>
+            
+            
+            
+            
+    
+                </article>
+            <article id="nike-shoes-women">
+                <h4>Обувки</h4>
+                <img src="https://i.postimg.cc/DzVJSWY0/NIKE-HF-IWD-BLOC-PRODUCTIONS.jpg" alt="Nike Обувки за жени" width="320" height="240">
+                <p>Качествени спортни обувки Nike за жени.</p>
+                <section id="nike-womens-shoes">
+                <h3>Жени-Обувки</h3>
+                <div class="products-grid">
+                <!--Дамски обувки-->
+                <div class="product" onclick="showModal('damski1')">
+                <img src="https://cdn.aboutstatic.com/file/images/19afa67dd2afbc6c9a4cc6aa110a77e2.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="NIKE Маратонки за бягане 'Winflo 11'" class="product-image"> 
+            <p>NIKE Маратонки за бягане 'Winflo 11'</p>
+            </div>
+            
+            <div class="product" onclick="showModal('damski2')">
+            <img src="https://cdn.aboutstatic.com/file/images/66803fb10b6f610b98f9185f809e17fe.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'Invincible 3' " class="product-image"> 
+            <p>'Invincible 3'</p>
+            </div>
+             <div class="product" onclick="showModal('damski3')">
+            <img src="https://cdn.aboutstatic.com/file/images/ef0f966aee15aaad31e380d220dedc50.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" NIKE Спортни обувки 'Metcon 9'  " class="product-image"> 
+            <p>NIKE Спортни обувки 'Metcon 9' </p>
+            </div>
+             <div class="product" onclick="showModal('jenski1')">
+            <img src="https://cdn.aboutstatic.com/file/images/ba32c1dfff092a33ff1669e3c2680bdf.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" NIKE Спортни обувки 'Versair'  " class="product-image"> 
+            <p>NIKE Спортни обувки 'Versair' </p>
+            </div>
+            <div class="product" onclick="showModal('jenski2')">
+            <img src="https://cdn.aboutstatic.com/file/images/974640dfa944bcce5c4e0b7aab015585.jpg?quality=75&height=800&width=600" alt=" 'AF1 PLT.AF.ORM'   " class="product-image"> 
+            <p> 'AF1 PLT.AF.ORM'  </p>
+            </div>
+            <div class="product" onclick="showModal('jenski3')">
+            <img src="https://cdn.aboutstatic.com/file/images/81c70d4a4c6bea239e0c12a78c64baa3.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'Air Max 270'  " class="product-image"> 
+            <p> 'Air Max 270'  </p>
+            </div>
+             <div class="product" onclick="showModal('kecove1')">
+            <img src="https://cdn.aboutstatic.com/file/images/e306a557de943c1f435ddd9b5f68edfe.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  'AIR FORCE 1'  " class="product-image"> 
+            <p>  'AIR FORCE 1'  </p>
+            </div>
+             <div class="product" onclick="showModal('kecove2')">
+            <img src="https://cdn.aboutstatic.com/file/images/16a96466bd68c6e4d64bb2d8dc42e091.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  'TECH HERA'  " class="product-image"> 
+            <p> 'TECH HERA'  </p>
+            </div>
+             <div class="product" onclick="showModal('kecove3')">
+            <img src="https://cdn.aboutstatic.com/file/images/b82fcc3920c13bef83081dc50bbc44b7.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  'BLAZER ROAM'   " class="product-image"> 
+            <p> 'BLAZER ROAM'   </p>
+            </div>
+           
+          </article>
+            
+            <article id="nike-accessories-women">
+                <h4>Аксесоари</h4>
+                <img src="https://i.postimg.cc/WbZjmcNq/Nike-Womens-campaign-for-Womens-World-Cup-2019-Nike.jpg" alt="Nike Аксесоари за жени" width="320" height="240">
+                <p>Спортни аксесоари Nike за жени.</p>
+                <section id="nike-womens-accessories">
+                <h3>Жени-Аксесоари</h3>
+                <div class="products-grid">
+                
+                <!--Аксесоари-->
+                <div class= "product" onclick="showModal('aks1')">
+                <img src="https://img2.ans-media.com/i/1084x1626/AA00-RED00D_99X_F1.jpg@webp?v=1648193806" alt="'Ръкавици Nike'" class="product-image" >
+                <p>'Ръкавици Nike'</p>
+                </div>
+                 <div class= "product" onclick="showModal('aks2')">
+                <img src="https://img2.ans-media.com/i/1256x1884/AA00-AKD4DS-30X_F1.jpg@webp?v=1685352257" alt="'NIKE ЛЕНТА SWOOSH'" class="product-image" >
+                <p>'NIKE ЛЕНТА SWOOSH'</p>
+                </div>
+                <div class= "product" onclick="showModal('aks3')">
+                <img src="https://cdn.aboutstatic.com/file/images/3676ee91905b1bea9b8dbb423f0de909.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Nike Sportswear Раница 'Heritage' " class="product-image" >
+                <p>'Nike Sportswear Раница 'Heritage'</p>
+                </div>
+                 <div class= "product" onclick="showModal('akses1')">
+                <img src="https://cdn.aboutstatic.com/file/images/46a55cde0646fe69ca3ea4a1dd368f4c.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Nike Sportswear Чанта " class="product-image" >
+                <p>'Nike Sportswear Чанта'</p>
+                </div>
+                <div class= "product" onclick="showModal('akses2')">
+                <img src="https://cdn.aboutstatic.com/file/images/e97c9c5ff52ee144b90c183f25563bf4.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Nike Sportswear Шапка с козирка " class="product-image" >
+                <p>'Nike Sportswear Шапка с козирка'</p>
+                </div>
+                <div class= "product" onclick="showModal('akses3')">
+                <img src="https://cdn.aboutstatic.com/file/images/a67c6849d39e2da46f60916f3f7ce3aa.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Nike Sportswear Спортни чорапи 'Everyday Plus' " class="product-image" >
+                <p>'Nike Sportswear Спортни чорапи 'Everyday Plus''</p>
+                </div>
+                
+            
+            </article>
+        </article>
+    </section>
+
+    <!-- Секция Adidas -->
+    <section id="adidas">
+        <h2>Adidas</h2>
+        <ul>
+            <li><a href="#adidas-men">Мъже</a></li>
+            <li><a href="#adidas-women">Жени</a></li>
+        </ul>
+
+        <!-- Мъже (Adidas) -->
+        <article id="adidas-men">
+            <h3>Мъже</h3>
+            <ul>
+                <li><a href="#adidas-clothes-men">Дрехи</a></li>
+                <li><a href="#adidas-shoes-men">Обувки</a></li>
+                <li><a href="#adidas-accessories-men">Аксесоари</a></li>
+            </ul>
+            <article id="adidas-clothes-men">
+                <h4>Дрехи</h4>
+                <img src="https://i.postimg.cc/Z57V4S5s/OZWEEGO-Shoes-adidas-US.jpg" alt="Adidas Дрехи за мъже" width="320" height="240">
+                <p>Оригинални дрехи Adidas за мъже.</p>
+                 <section id="adidas-mans-clothes">
+                <h3>Мъже-Дрехи</h3>
+                <div class="products-grid">
+                
+                <!--Дрехи-->
+                 <div class= "product" onclick="showModal('dress1')">
+                <img src="https://cdn.aboutstatic.com/file/images/6465c26f5221918ee45f658e528b0148.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="Суичъри с качулка 'Adicolor Classics Beckenbauer' " class="product-image" >
+             <p>'Суичъри с качулка 'Adicolor Classics Beckenbauer' '</p>
+                </div>
+                
+                 <div class= "product" onclick="showModal('dress2')">
+                <img src="https://cdn.aboutstatic.com/file/images/9e88e9d96a4ac7d94a9c4767149f8175.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Тениска 'Adicolor Classics" class="product-image" >
+             <p>'ADIDAS ORIGINALS Тениска 'Adicolor Classics' '</p>
+                </div>
+                 <div class= "product" onclick="showModal('dress3')">
+                <img src="https://cdn.aboutstatic.com/file/images/33793cc57a150ac282126b1955aeec56.jpg?quality=75&height=800&width=600" alt="ADIDAS ORIGINALS Тениска" class="product-image" >
+             <p>'ADIDAS ORIGINALS Тениска '</p>
+                </div>
+                 <div class= "product" onclick="showModal('dreh1')">
+                <img src="https://cdn.aboutstatic.com/file/images/ce1461024b6e58732c0db288a5b4e37a.jpg?quality=75&height=800&width=600" alt="ADIDAS ORIGINALS Тениска 'Adicolor' " class="product-image" >
+             <p>'ADIDAS ORIGINALS Тениска 'Adicolor'  '</p>
+                </div>
+                <div class= "product" onclick="showModal('dreh2')">
+                <img src="https://cdn.aboutstatic.com/file/images/9fcd671e592bec342461afb90355b0eb.jpg?quality=75&height=800&width=600" alt="ADIDAS ORIGINALS шорти " class="product-image" >
+             <p>'ADIDAS ORIGINALS шорти'</p>
+                </div>
+                 <div class= "product" onclick="showModal('dreh3')">
+                <img src="https://cdn.aboutstatic.com/file/images/5cedba7f5ca807dc8abf74d632576bcd.jpg?quality=75&height=800&width=600" alt="Tapered Leg Панталон " class="product-image" >
+             <p>'Tapered Leg Панталон'</p>
+                </div>
+                <div class= "product" onclick="showModal('dre1')">
+                <img src="https://cdn.aboutstatic.com/file/images/755ab41907522d007e31a11f4ae6b9ba.jpg?quality=75&height=800&width=600" alt="Tapered Leg Панталон 'Trefoil Essentials'  " class="product-image" >
+             <p>'Tapered Leg Панталон 'Trefoil Essentials' '</p>
+                </div>
+                <div class= "product" onclick="showModal('dre2')">
+                <img src="https://cdn.aboutstatic.com/file/images/e7cf3d654e449e1f9469b9696e7e0fb5.jpg?quality=75&height=800&width=600" alt="ADIDAS ORIGINALS Regular Панталон" class="product-image" >
+             <p>'ADIDAS ORIGINALS Regular Панталон' '</p>
+                </div>
+                <div class= "product" onclick="showModal('dre3')">
+                <img src="https://cdn.aboutstatic.com/file/images/a326f455b8e8d6cb8d34c7464869917b.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Преходно яке '100T' " class="product-image" >
+             <p>'ADIDAS ORIGINALS Преходно яке '100T' '</p>
+                </div>
+               
+             </article>
+             
+            <article id="adidas-shoes-men">
+                <h4>Обувки</h4>
+                <img src="https://i.postimg.cc/fRsg4M5Q/Adidas-Sports-Direct-Photoshoot.jpg" alt="Adidas Обувки за мъже" width="320" height="240">
+                <p>Елегантни и спортни обувки Adidas за мъже.</p>
+                 <section id="adidas-mans-shoes">
+                <h3>Мъже-Обувки</h3>
+                <div class="products-grid">
+                
+                <!--Обувки-->
+                 <div class= "product" onclick="showModal('obu1')">
+                <img src="https://cdn.aboutstatic.com/file/images/99f8eebfbb21da9cd790a65ccd888677.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600 " alt="'SAMBA XLG' " class="product-image" >
+             <p>' 'SAMBA XLG' '</p>
+                </div>
+                 <div class= "product" onclick="showModal('obu2')">
+                <img src="https://cdn.aboutstatic.com/file/images/bb055fd7d66520b69ce542360be2415c.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'Megaride' " class="product-image" >
+             <p>'  'Megaride' '</p>
+                </div>
+                <div class= "product" onclick="showModal('obu3')">
+                <img src="https://cdn.aboutstatic.com/file/images/529ab36a869af8542c04059a6aafed95.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'Forum' " class="product-image" >
+             <p>'  'Forum' '</p>
+                </div>
+                  <div class= "product" onclick="showModal('kec1')">
+                <img src="https://cdn.aboutstatic.com/file/images/05e49dab461cefd797246063c9351065.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="'Adistar Cushion' " class="product-image" >
+             <p>'  'Adistar Cushion' '</p>
+                </div>
+                     <div class= "product" onclick="showModal('kec2')">
+                <img src="https://cdn.aboutstatic.com/file/images/cfc034bafdce7afe121051498436f10a.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="'Forum 84' " class="product-image" >
+             <p>' 'Forum 84' '</p>
+                </div>
+                       <div class= "product" onclick="showModal('kec3')">
+                <img src="https://cdn.aboutstatic.com/file/images/51186f72034fae209f09213981352c10.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Ниски маратонки 'Megaride' " class="product-image" >
+             <p>'ADIDAS ORIGINALS Ниски маратонки 'Megaride' '</p>
+                </div>
+                <div class= "product" onclick="showModal('mar1')">
+                <img src="https://cdn.aboutstatic.com/file/images/c1297e89d7dfebb7690d497fdecd1d18.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600 " alt=" Ниски маратонки 'RIVALRY' " class="product-image" >
+             <p>' Ниски маратонки 'RIVALRY' ' '</p>
+                </div>
+                <div class= "product" onclick="showModal('mar2')">
+                <img src="https://cdn.aboutstatic.com/file/images/33601c7057a58846e654beb0e3d20050.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'NMD R1' " class="product-image" >
+             <p>' 'NMD R1' '</p>
+                </div>
+                 <div class= "product" onclick="showModal('mar3')">
+                <img src="https://cdn.aboutstatic.com/file/images/476bd274f49516c2eea7aac17e179763.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" 'Campus 00s' " class="product-image" >
+             <p>''Campus 00s' '</p>
+                </div>
+                
+              </article>
+              
+              
+            <article id="adidas-accessories-men">
+                <h4>Аксесоари</h4>
+                <img src="https://i.postimg.cc/P5s2KJGk/Real-Madrid-Third-Kit.jpg" alt="Adidas Аксесоари за мъже" width="320" height="240">
+                <p>Спортни аксесоари Adidas за мъже.</p>
+                  <section id="adidas-mans-accessories">
+                <h3>Мъже-Аксесоари</h3>
+                <div class="products-grid">
+                
+                <!--Аксесоари-->
+                 <div class= "product" onclick="showModal('cap1')">
+                <img src="https://cdn.aboutstatic.com/file/images/4cf83674b806819ab5894acf1d3417fe.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="Шапка с козирка 'CLASS'  " class="product-image" >
+             <p>' Шапка с козирка 'CLASS'  '</p>
+                </div>
+                <div class= "product" onclick="showModal('cap2')">
+                <img src="https://cdn.aboutstatic.com/file/images/fd04822911230fc7ed38bc3fabbc8297.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Чанта за кръста 'Pride' " class="product-image" >
+             <p>Чанта за кръста 'Pride'</p>
+                </div>
+                <div class= "product" onclick="showModal('cap3')">
+                <img src="https://cdn.aboutstatic.com/file/images/85373b6e5a66fb9c059295fdd4088785.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS чорапи " class="product-image" >
+             <p>ADIDAS ORIGINALS чорапи</p>
+                </div>
+                <div class= "product" onclick="showModal('chas1')">
+                <img src="https://cdn.aboutstatic.com/file/images/726df7268344866a4cffd2bdbc941b62.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Аналогов часовник 'PROJECT TWO' " class="product-image" >
+             <p>ADIDAS ORIGINALS Аналогов часовник 'PROJECT TWO'</p>
+                </div>
+                 <div class= "product" onclick="showModal('chas2')">
+                <img src="https://cdn.aboutstatic.com/file/images/3e16d417fce731aabfb2b70a6cf587a0.jpg?quality=75&height=800&width=600" alt="ADIDAS ORIGINALS Раница " class="product-image" >
+             <p>ADIDAS ORIGINALS Раница</p>
+                </div>
+                <div class= "product" onclick="showModal('chas3')">
+                <img src="https://cdn.aboutstatic.com/file/images/ac0c371998f36c31627dfa886e579e81.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Слънчеви очила в Черно " class="product-image" >
+             <p>ADIDAS ORIGINALS Слънчеви очила в Черно</p>
+                </div>
+               
+                
+                
+                
+             
+            </article>
+        </article>
+
+        <!-- Жени (Adidas) -->
+        <article id="adidas-women">
+            <h3>Жени</h3>
+            <ul>
+                <li><a href="#adidas-clothes-women">Дрехи</a></li>
+                <li><a href="#adidas-shoes-women">Обувки</a></li>
+                <li><a href="#adidas-accessories-women">Аксесоари</a></li>
+            </ul>
+            <article id="adidas-clothes-women">
+                <h4>Дрехи</h4>
+                <img src="https://i.postimg.cc/vmhPnHsf/adidas-jeni.jpg" alt="Adidas Дрехи за жени" width="320" height="240">
+                <p>Оригинални спортни дрехи Adidas за жени.</p>
+                <section id="adidas-womens-clothes">
+                <h3>Жени-Дрехи</h3>
+                <div class="products-grid">
+                
+                <!--Дрехи-->
+                 <div class= "product" onclick="showModal('dres1')">
+                <img src="https://cdn.aboutstatic.com/file/images/e806ed621ea2484c1ebecbcbfc2ac15e.jpg?quality=75&height=800&width=600" alt=" Тениска 'Adicolor'  " class="product-image" >
+             <p>'  Тениска 'Adicolor' '</p>
+                </div>
+                <div class= "product" onclick="showModal('dres2')">
+                <img src="https://cdn.aboutstatic.com/file/images/ff665006607f62b4d973d933b9efc61f.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  'Essentials' " class="product-image" >
+             <p>'  'Essentials' '</p>
+                </div>
+                 <div class= "product" onclick="showModal('dres3')">
+                <img src="https://cdn.aboutstatic.com/file/images/1f2dc5c9105a88bfe19f8882d80ad8b5.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="  ADIDAS ORIGINALS Тениска " class="product-image" >
+             <p>'  ADIDAS ORIGINALS Тениска '</p>
+                </div>
+                   <div class= "product" onclick="showModal('dres4')">
+                <img src="https://cdn.aboutstatic.com/file/images/596d0a65d4cadc8f3bea64b6ad2d2609.jpg?quality=75&height=800&width=600" alt=" Тениска '3-Streifen' " class="product-image" >
+             <p>'  Тениска '3-Streifen''</p>
+                </div>
+                <div class= "product" onclick="showModal('dres5')">
+                <img src="https://cdn.aboutstatic.com/file/images/285a45800569b7d02b88a0578eff7d7f.jpg?quality=75&height=800&width=600" alt=" Панталон 'Adibreak' " class="product-image" >
+             <p>' Панталон 'Adibreak''</p>
+                </div>
+                <div class= "product" onclick="showModal('dres6')">
+                <img src="https://cdn.aboutstatic.com/file/images/62305b3180f1db6ac087f5c279842760.jpg?quality=75&height=800&width=6000" alt=" Skinny Fit Клин 'Adicolor Classics' " class="product-image" >
+             <p>'Skinny Fit Клин 'Adicolor Classics''</p>
+                </div>
+                <div class= "product" onclick="showModal('dres7')">
+                <img src="https://cdn.aboutstatic.com/file/images/e69fc2f47d0c6f506ef31d0d58fbca03.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" ADIDAS ORIGINALS Преходно яке " class="product-image" >
+             <p>'ADIDAS ORIGINALS Преходно яке'</p>
+                </div>
+                <div class= "product" onclick="showModal('dres8')">
+                <img src="https://cdn.aboutstatic.com/file/images/1d0d479e2d81ed186aec77da22ddbc73.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="  Зимно яке 'Adicolor' " class="product-image" >
+             <p>' Зимно яке 'Adicolor''</p>
+                </div>
+                <div class= "product" onclick="showModal('dres9')">
+                <img src="https://cdn.aboutstatic.com/file/images/c548784dc9d70eea72a4b4388f69741b.jpg?quality=75&height=800&width=600" alt=" Tapered Leg Панталон " class="product-image" >
+             <p>' Tapered Leg Панталон'</p>
+                </div>
+            </article>
+            <article id="adidas-shoes-women">
+                <h4>Обувки</h4>
+                <img src="https://i.postimg.cc/05B0rXJc/adidas-Originals-Samba-OG-White-Black.jpg" alt="Adidas Обувки за жени" width="320" height="240">
+                <p>Качествени спортни обувки Adidas за жени.</p>
+                <section id="adidas-womens-shoes">
+                <h3>Жени-Обувки</h3>
+                <div class="products-grid">
+                
+                <!--Дрехи-->
+                <div class= "product" onclick="showModal('ob1')">
+                <img src="https://cdn.aboutstatic.com/file/images/0ce365a595661c51d77b1f4b14ea5114.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" Ниски маратонки 'Gazelle' " class="product-image" >
+             <p>' Ниски маратонки 'Gazelle''</p>
+             </div>
+                <div class= "product" onclick="showModal('ob2')">
+                <img src="https://cdn.aboutstatic.com/file/images/ee86aa30fbc078a349a48d3004df2dee.jpg?quality=75&height=800&width=600" alt="Ниски маратонки 'Campus 00s'" class="product-image" >
+             <p>' Ниски маратонки 'Campus 00s''</p>
+             </div>
+             <div class= "product" onclick="showModal('ob3')">
+                <img src="https://cdn.aboutstatic.com/file/images/8a6f94dc7694facbcf7a8457f3dac9f7.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Ниски маратонки 'TEMPER RUN 2' " class="product-image" >
+             <p>' Ниски маратонки 'TEMPER RUN 2' '</p>
+             </div>
+              <div class= "product" onclick="showModal('ob4')">
+                <img src="https://cdn.aboutstatic.com/file/images/add4380081083346c059d2791e912d05.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Ниски маратонки 'Gazelle Bold ' " class="product-image" >
+             <p>' Ниски маратонки 'Gazelle Bold' '</p>
+             </div>
+              <div class= "product" onclick="showModal('ob5')">
+                <img src="https://cdn.aboutstatic.com/file/images/ec4728bdc666790b0b14050507c94da9.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Ниски маратонки 'Hyperturf Adventure'  " class="product-image" >
+             <p>'Ниски маратонки 'Hyperturf Adventure''</p>
+             </div>
+              <div class= "product" onclick="showModal('ob6')">
+                <img src="https://cdn.aboutstatic.com/file/images/f30872f647aedfc9adae9070f026a139.jpg?quality=75&height=800&width=600" alt="Чехли 'Adilette Lite'  " class="product-image" >
+             <p>'Чехли 'Adilette Lite''</p>
+             </div>
+              <div class= "product" onclick="showModal('ob7')">
+                <img src="https://cdn.aboutstatic.com/file/images/004f34c3e337e3d2bbcb8e1764c3b99f.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" Ниски маратонки 'CAMPUS 00s'  " class="product-image" >
+             <p>'Ниски маратонки 'CAMPUS 00s' '</p>
+             </div>
+             <div class= "product" onclick="showModal('ob8')">
+                <img src="https://cdn.aboutstatic.com/file/images/0ac81d6beb5a74c89d33dff923dfa28a.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  Ниски маратонки 'ADIFOM MEGARIDE'  " class="product-image" >
+             <p>' Ниски маратонки 'ADIFOM MEGARIDE' '</p>
+             </div>
+              <div class= "product" onclick="showModal('ob9')">
+                <img src="https://cdn.aboutstatic.com/file/images/70f1d7784e68533c903ea0fa0cf99604.jpg?quality=75&height=800&width=600" alt="Ниски маратонки 'Forum' " class="product-image" >
+             <p>'Ниски маратонки 'Forum''</p>
+             </div>
+             
+           </article>
+           
+            <article id="adidas-accessories-women">
+                <h4>Аксесоари</h4>
+                <img src="https://i.postimg.cc/gj0jC6FN/image.jpg" alt="Adidas Аксесоари за жени" width="320" height="240">
+                <p>Спортни аксесоари Adidas за жени.</p>
+                <section id="adidas-womens-accessories">
+                <h3>Жени-Аксесоари</h3>
+                <div class="products-grid">
+                
+                <!--Аксесоари-->
+                 <div class= "product" onclick="showModal('ak1')">
+                <img src="https://cdn.aboutstatic.com/file/images/22ed2ab6005aa83aa1f26a3cd0edaa3c.jpg?quality=75&height=800&width=600" alt="Чанта за през рамо тип преметка 'AIRLINER'" class="product-image" >
+             <p>Чанта за през рамо тип преметка 'AIRLINER' </p>
+             </div>
+                 <div class= "product" onclick="showModal('ak2')">
+                <img src="https://cdn.aboutstatic.com/file/images/72a965030f2d0413c24f2ed879f75833.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Шапка" class="product-image" >
+             <p>ADIDAS ORIGINALS Шапка </p>
+             </div>
+             <div class= "product" onclick="showModal('ak3')">
+                <img src="https://cdn.aboutstatic.com/file/images/460392bd5b9832025be48a8be9f9da17.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="Аналогов часовник" class="product-image" >
+             <p>Аналогов часовник </p>
+             </div>
+             <div class= "product" onclick="showModal('ak4')">
+                <img src="https://cdn.aboutstatic.com/file/images/bd9fbc7126a9f6d2edd043de74cdb334.jpg?quality=75&height=800&width=6000" alt="Раница 'Adicolor'" class="product-image" >
+             <p> Раница 'Adicolor'</p>
+             </div>
+             <div class= "product" onclick="showModal('ak5')">
+                <img src="https://cdn.aboutstatic.com/file/images/3266a108d1728b505b179bcad1852343.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Шапка с козирка" class="product-image" >
+             <p>ADIDAS ORIGINALS Шапка с козирка</p>
+             </div>
+             <div class= "product" onclick="showModal('ak6')">
+                <img src="https://cdn.aboutstatic.com/file/images/8d5876ee30dd3dbb99167b88f72ae045.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="ADIDAS ORIGINALS Слънчеви очила" class="product-image" >
+             <p>ADIDAS ORIGINALS Слънчеви очила</p>
+             </div>
+             
+            </article>
+        </article>
+    </section>
+
+    <!-- подобни секции за Puma, Guess, Calvin Klein и промоции тук -->
+    
+     <!-- Секция Puma -->
+    <section id="puma">
+        <h2>Puma</h2>
+        <ul>
+            <li><a href="#Puma-men">Мъже</a></li>
+            <li><a href="#Puma-women">Жени</a></li>
+        </ul>
+
+        <!-- Мъже (Puma) -->
+        <article id="Puma-men">
+            <h3>Мъже</h3>
+            <ul>
+                <li><a href="#puma-clothes-men">Дрехи</a></li>
+                <li><a href="#puma-shoes-men">Обувки</a></li>
+                <li><a href="#puma-accessories-men">Аксесоари</a></li>
+            </ul>
+             <article id="puma-clothes-men">
+                <h4>Дрехи</h4>
+                <img src="https://pauseonline.s3.amazonaws.com/wp-content/uploads/2017/05/bigseanpumapause.jpg" alt="Puma Дрехи за мъже" width="320" height="240">
+                <p>Оригинални спортни дрехи Puma за мъже.</p>
+                <section id="puma-mens-clothes">
+    <h3>Мъже - Дрехи</h3>
+    <div class="products-grid">
+        <!-- Тениски -->
+        <div class= "product" onclick="showModal('pum1')">
+                <img src="https://cdn.aboutstatic.com/file/images/8ce8394ea6c387969ec037420e9c1989.jpg?quality=75&height=800&width=600" alt="PUMA Тениска 'Essential' " class="product-image" >
+             <p>PUMA Тениска 'Essential' '</p>
+                </div>
+                 <div class= "product" onclick="showModal('pum2')">
+                <img src="https://cdn.aboutstatic.com/file/images/1a9564eabf2b98942919314c678ac055.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="PUMA Тениска " class="product-image" >
+             <p>PUMA Тениска'</p>
+                </div>
+                  <div class= "product" onclick="showModal('pum3')">
+                <img src="https://cdn.aboutstatic.com/file/images/b65ed66757375f22857dad9014db2a65.jpg?quality=75&height=800&width=600" alt="PUMA Спортен суитшърт 'Classics' " class="product-image" >
+             <p>PUMA Спортен суитшърт 'Classics'</p>
+                </div>
+                <div class= "product" onclick="showModal('pum4')">
+                <img src="https://cdn.aboutstatic.com/file/images/6127466b1c4b21bd0c35c79821f06d3f.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt=" Leg Панталон 'Squad' " class="product-image" >
+             <p> Leg Панталон 'Squad'</p>
+                </div>
+                <div class= "product" onclick="showModal('pum5')">
+                <img src="https://cdn.aboutstatic.com/file/images/8132bceda002e219fe3bee9735f29bcb.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="PUMA Regular" class="product-image" >
+             <p>PUMA Regular</p>
+                </div>
+                <div class= "product" onclick="showModal('pum6')">
+                <img src="https://cdn.aboutstatic.com/file/images/91cbb58d6b308c1eac4d1363eadae6c3.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="PUMA Суичър 'ESS 2 Col Big'" class="product-image" >
+             <p>PUMA Суичър 'ESS 2 Col Big'</p>
+                </div>
+                 <div class= "product" onclick="showModal('pum7')">
+                <img src="https://cdn.aboutstatic.com/file/images/b062f0768fb3f849be51da1c54de1c72.png?quality=75&height=1280&width=960" alt="PUMA Regular" class="product-image" >
+             <p>PUMA Regular</p>
+                </div>
+                 <div class= "product" onclick="showModal('pum8')">
+                <img src="https://cdn.aboutstatic.com/file/images/c9791b8f05b56814f102c90ddd47297d.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="PUMA Функционално яке 'T7 PLAY.PARIS'" class="product-image" >
+             <p>PUMA Функционално яке 'T7 PLAY.PARIS'</p>
+                </div>
+                <div class= "product" onclick="showModal('pum9')">
+                <img src="https://cdn.aboutstatic.com/file/images/d5c717668a475eaadca9c17ca9de71d7.jpg?quality=75&height=800&width=600" alt="Tapered Leg Панталон" class="product-image" >
+             <p>Tapered Leg Панталон</p>
+                </div>
+                
+                 </article>
+            <article id="puma-shoes-man">
+                <h4>Обувки</h4>
+                <img src="https://i.ebayimg.com/images/g/0eEAAOSwTXhletBu/s-l400.jpg" alt="Puma Обувки за мъже" width="320" height="240">
+                <p>Спортни обувки Puma за мъже.</p>
+                <section id="puma-mans-shoes">
+                <h3>Мъже-Обувки</h3>
+                <div class="products-grid">
+                <!--Мъжки обувки-->
+				<div class="product" onclick="showModal('pumo1')">
+            <img src="https://cdn.aboutstatic.com/file/images/3ad9cedf94fcb2505c221af3ba89e84d.jpg?quality=75&height=800&width=600" alt=" Ниски маратонки 'CA Pro Classic'"class="product-image"> 
+            <p> Ниски маратонки 'CA Pro Classic'</p>
+        </div>
+		        <div class="product" onclick="showModal('pumo2')">
+                <img src="https://cdn.aboutstatic.com/file/images/60c6a7172072c83b5ed4d472df7f1257.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="  Ниски маратонки 'Suede XL' "class="product-image"> 
+               <p> Ниски маратонки 'Suede XL' </p>
+             </div>
+			 <div class="product" onclick="showModal('pumo3')">
+                <img src="https://cdn.aboutstatic.com/file/images/b8fe73ff815a1179cc2fbf7b53b17f01.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="Ниски маратонки 'Speedcat'"class="product-image"> 
+               <p>Ниски маратонки 'Speedcat'</p>
+                  </div>
+			        <div class="product" onclick="showModal('pumo4')">
+                    <img src="https://cdn.aboutstatic.com/file/images/e86a7a56abf5a923d0d53e4ca51913dc.png?quality=75&height=800&width=600" alt=" Ниски маратонки 'Rebound V6'"class="product-image"> 
+                    <p> Ниски маратонки 'Rebound V6'</p>
+                    </div>
+			        <div class="product" onclick="showModal('pumo5')">
+                    <img src="https://cdn.aboutstatic.com/file/images/d6d5b29d7f1493d6f41c2533b029014c.jpg?brightness=0.96&quality=75&height=800&width=600" alt="Ниски маратонки 'Inhale'"class="product-image"> 
+                    <p> Ниски маратонки 'Inhale'</p>
+                    </div>
+					<div class="product" onclick="showModal('pumo6')">
+                    <img src="https://cdn.aboutstatic.com/file/images/5f9140d9aafa15a32e454b74d239ad2a.jpg?brightness=0.96&quality=75&height=800&width=600" alt="Ниски маратонки 'Smash 3.0'"class="product-image"> 
+                    <p>Ниски маратонки 'Smash 3.0'</p>
+                    </div>
+					</article>
+					
+            <article id="puma-accessories-man">
+                <h4>Аксесоари</h4>
+                <img src="https://i.ebayimg.com/images/g/0eEAAOSwTXhletBu/s-l400.jpg" alt="Puma Аксесоари за мъже" width="320" height="240">
+                <p>Аксесоари Puma за мъже.</p>
+                <section id="puma-mans-accessories">
+                <h3>Мъже-Аксесоари</h3>
+                <div class="products-grid">
+                <!--Мъжки Аксесоари-->
+					<div class="product" onclick="showModal('pumi1')">
+            <img src="https://cdn.aboutstatic.com/file/0f172376dd460ef35f1898a84a1e26f9?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="PUMA Шапка с козирка"class="product-image"> 
+            <p> PUMA Шапка с козирка</p>
+        </div>
+		<div class="product" onclick="showModal('pumi2')">
+            <img src="https://cdn.aboutstatic.com/file/images/aa64dae28417fa1c0b82c25a37d26449.jpg?brightness=0.96&quality=75&trim=1&height=800&width=600" alt="PUMA Боксерки 'Everyday'"class="product-image"> 
+            <p>PUMA Боксерки 'Everyday'</p>
+        </div>
+		<div class="product" onclick="showModal('pumi3')">
+            <img src="https://cdn.aboutstatic.com/file/images/4fbc243fb242b988b7e9d6591ec1ba2e.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="PUMA чорапи"class="product-image"> 
+            <p>PUMA чорапи</p>
+        </div>
+                
+       </article>
+	   
+	   
+	   
+	   
+	   
+	   
+       
+    </section>
+	
+	
+	<section id="guess">
+        <h2>Guess</h2>
+        <ul>
+            <li><a href="#Guess-men">Мъже</a></li>
+            <li><a href="#Guess-women">Жени</a></li>
+        </ul>
+
+        <!-- Мъже (Guess) -->
+        <article id="Guess-men">
+            <h3>Мъже</h3>
+            <ul>
+                <li><a href="#guess-clothes-men">Дрехи</a></li>
+                <li><a href="#guess-shoes-men">Обувки</a></li>
+                <li><a href="#guess-accessories-men">Аксесоари</a></li>
+            </ul>
+             <article id="guess-clothes-men">
+                <h4>Дрехи</h4>
+                <img src="https://mediaslide-europe.storage.googleapis.com/metromodels/news_pictures/2023/05/large-1683741904-8920ad819e9121b6beacc7507ed7ba5c.jpeg" alt="Guess Дрехи за мъже" width="320" height="240">
+                <p>Елегантни дрехи Guess за мъже.</p>
+                <section id="Guess-mens-clothes">
+    <h3>Мъже - Дрехи</h3>
+    <div class="products-grid">
+	<div class="product" onclick="showModal('guess1')">
+            <img src="https://cdn.aboutstatic.com/file/images/4f5a411f371a59973e8adfecf4a2f823.jpg?quality=75&height=800&width=600" alt="GUESS Slim Fit Риза"class="product-image"> 
+            <p>GUESS Slim Fit Риза</p>
+        </div>
+		<div class="product" onclick="showModal('guess2')">
+            <img src="https://cdn.aboutstatic.com/file/images/431f108d03ebb2c413cdafbb12bd30cd.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt=" Панталон 'KORBIN'"class="product-image"> 
+            <p> Панталон 'KORBIN'</p>
+        </div>
+		<div class="product" onclick="showModal('guess3')">
+            <img src="https://cdn.aboutstatic.com/file/images/9a99c09fc6075a785eba8d461047c7cf.jpg?quality=75&height=800&width=600" alt="GUESS JEANS Слим фит Дънки"class="product-image"> 
+            <p>GUESS JEANS Слим фит Дънки</p>
+        </div>
+		<div class="product" onclick="showModal('guess4')">
+            <img src="https://cdn.aboutstatic.com/file/images/65bcabed8c683999731b8aa2663a72b3.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Суичър"class="product-image"> 
+            <p>GUESS Суичър</p>
+        </div>
+		<div class="product" onclick="showModal('guess5')">
+            <img src="https://cdn.aboutstatic.com/file/images/3e7784303247909e10d8f2f201c5b390.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Суичър"class="product-image"> 
+            <p>GUESS Суичър</p>
+        </div>
+	
+		<div class="product" onclick="showModal('guess6')">
+            <img src="https://cdn.aboutstatic.com/file/images/3476be5f5a57330bc748fec876c7896d.jpg?quality=75&height=800&width=600" alt="GUESS яке"class="product-image"> 
+            <p>GUESS яке</p>
+        </div>
+                
+        </article>
+	<article id="guess-shoes-man">
+                <h4>Обувки</h4>
+                <img src="https://img.spartoo.eu/images/synchro/products_external_pictures/8112_pic_comp_pid_22418831_500.jpg" alt="Guess Обувки за мъже" width="320" height="240">
+                <p>Стилни Guess обувки за Мъже.</p>
+                <section id="guess-mans-shoes">
+                <h3>Мъже-Обувки</h3>
+                <div class="products-grid">
+                
+                <!--Обувки-->
+				<div class="product" onclick="showModal('guess7')">
+            <img src="https://cdn.aboutstatic.com/file/images/a7c3208f1da79cbeeba6db4cf0da8f23.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Ниски маратонки 'Elba'"class="product-image"> 
+            <p>GUESS Ниски маратонки 'Elba'</p>
+        </div>
+		<div class="product" onclick="showModal('guess8')">
+            <img src="https://cdn.aboutstatic.com/file/images/9e732a3a3baece6bbfb401a2efc1bd8e.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Ниски маратонки 'Vibo'  "class="product-image"> 
+            <p>GUESS Ниски маратонки  'Vibo'</p>
+        </div>
+		<div class="product" onclick="showModal('guess9')">
+            <img src="https://cdn.aboutstatic.com/file/images/bebeac11ec77ac0ddd7b80763158b054.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Чехли 'Tokyo'  "class="product-image"> 
+            <p>Чехли 'Tokyo'</p>
+        </div>
+		
+		</article>
+	<article id="guess-accessories-man">
+                <h4>Аксесоари</h4>
+                <img src="https://i.pinimg.com/736x/a3/8d/57/a38d57af05a03f0745752a9b8e98255a.jpg" alt="Guess Обувки за мъже" width="320" height="240">
+                <p>Стилни Guess аксесоари за Мъже.</p>
+                <section id="guess-accessories-shoes">
+                <h3>Мъже-Аксесоари</h3>
+                <div class="products-grid">
+                
+                <!--Аксесоари-->
+				<div class="product" onclick="showModal('guess10')">
+            <img src="https://cdn.aboutstatic.com/file/images/7b60498f9abdae16d8a47c2ea4fa9dbb.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Чанта за през рамо "class="product-image"> 
+            <p>GUESS Чанта за през рамо </p>
+        </div>
+		<div class="product" onclick="showModal('guess11')">
+            <img src="https://cdn.aboutstatic.com/file/images/43238e03faeb239a44ebfd3f0577967b.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Аналогов часовник "class="product-image"> 
+            <p>GUESS Аналогов часовник</p>
+        </div>
+		<div class="product" onclick="showModal('guess12')">
+            <img src="https://cdn.aboutstatic.com/file/images/c7567ccf46b781c54e9f7418a2cb202a.png?bg=F4F4F5&quality=75&trim=1&height=800&width=600" alt="GUESS Шапка с козирка 'LONDON'   "class="product-image"> 
+            <p>GUESS Шапка с козирка 'LONDON' </p>
+        </div>
+	
+	
+	
+	
+        </article>
+    </section>
+    
+   
+    
+    
+      <script>
+     const modalData = {
+      teniska1: { title: "Суичър Nike", description: "Памук", price: "Цена: 169 лв" },
+       teniska2: { title: "Суичър Nike", description: "Памук", price: "Цена: 140 лв" },
+       teniska3: { title: "Блуза синьо Nike", description: "Памук", price: "Цена: 120 лв" },
+       gornishte1: { title: "Тениска Светлокафяво", description: "Полиестер", price: "Цена: 130 лв" },
+        gornishte2: { title: "Тениска Зелено", description: "Полиестер", price: "Цена: 100 лв" },
+         gornishte3: { title: "Тениска черно, златен детайл", description: "Полиестер", price: "Цена: 120 лв" },
+          dolnishte1: { title: "Зелено долнище, анцуг", description: "памук", price: "Цена: 160 лв" },
+          dolnishte2: { title: "Син панталон", description: "памук", price: "Цена: 180 лв" },
+          dolnishte3: { title: "Къси панталонки", description: "памук", price: "Цена: 120 лв" },
+          
+           obuvkasport1: {title: "Обувки черни", description: "модел 2024", price: "цена: 360лв"},
+            obuvkasport2: { title: "Сиви-патформа", description: "Велур", price: "148 лв" },
+            obuvkasport3: { title: "Обувки Нейви Синьо", description: "ежедневен модел", price: "цена: 250лв." },
+            niski1:  { title: "Обувки цвят опушено синьо", description: "велур", price: "цена: 300лв." },
+            niski2:  { title: "обувка цвят капучино", description: "дишаща материя", price: "цена: 310лв." },
+            niski3:  { title: "Топ модел 2023", description: "удобни за ежедневие", price: "цена: 360 лв." },
+            maratonka1:  { title: "кафяви обувки", description: "велур", price: "цена: 305лв." },
+             maratonka2: { title: "маратонки с разцветка", description: "дишаща материя", price: "цена: 310лв." },
+              maratonka3: { title: "Топ модел 2023", description: "удобни за ежедневие", price: "цена: 260 лв." },
+              chorapi1: { title: "Чорапи Nike", description: "Бели", price: "цена: 10 лв." },
+              chorapi2: { title: "Боксерки 3 броя", description: "Цветни-дишаща материя", price: "цена: 40 лв." },
+              chorapi3: { title: "Чорапи Nike-къси", description: "Цветни", price: "цена: 12 лв." },
+              ranici1:{ title: "NIKE TEAM Сак NK ACDMY TEAM L ", description: "червен", price: "цена: 170 лв." },
+               ranici2:{ title: "'JORDAN Шапка J RISE CAP '", description: "Шапка с козирка", price: "цена: 100 лв." },
+               ranici3:{ title: "'Вратарски ръкавици Goalkeeper Match '", description: "Ръкавици-дишаща материя", price: "цена: 190 лв." },
+               chanti1:{ title: "'Nike Раница '", description: "21 литра", price: "цена: 135 лв." },
+                chanti2:{ title: "'Nike Чантичка '", description: "Бежова", price: "цена: 80 лв." },
+                chanti3:{ title: "'Шалче '", description: "черен десен", price: "цена: 40 лв." },
+                 bluza1:{ title: "'Nike Sportswear Суичър 'PHNX FLC'", description: "Черешово Червено", price: "цена: 128 лв." },
+                  bluza2:{ title: "'Суичър 'CLUB FLC' ", description: "Бежово Меланж", price: "цена: 145 лв." },
+                   bluza3:{ title: "Суичър 'Phoenix Fleece' ", description: "Розово, памук", price: "цена: 140 лв." },
+                   dolno1:{ title: "Tapered Leg Панталон 'PHOENIX FLEECE' ", description: "Черен,лого Nike", price: "цена: 135 лв." },
+                     dolno2:{ title: "Tapered Leg Панталон ", description: "Розово", price: "цена: 120 лв." },
+                      dolno3:{ title: "Skinny Fit Клин 'Essential'  ", description: "Черен Клин с бял надпис", price: "цена: 120 лв." },
+                      kusi1:{ title: "'Phoenix Fleece'Шорти  ", description: "Сив Меланж", price: "цена: 80 лв." },
+                       kusi2:{ title: "Regular 'Club Fleece'  ", description: "Цвят Корал;", price: "цена: 72 лв." },
+                        kusi3:{ title: "Nike Sportswear ", description: "Бели панталонки", price: "цена: 63 лв." },
+                          damski1:{ title: "NIKE 'Winflo 11' ", description: "Сиви Маратонки за бягане ", price: "цена: 110 лв." },
+                           damski2:{ title: "'Invincible 3' ", description: "Маратонки за бягане", price: "цена: 170 лв." },
+                            damski3:{ title: "NIKE Спортни обувки 'Metcon 9'  ", description: "Маратонки Цвят пудра", price: "цена: 214 лв." },
+                             jenski1:{ title: "NIKE Спортни обувки 'Versair' ", description: "Маратонки бели, шарена платформа", price: "цена: 200 лв." },
+                              jenski2:{ title: " 'AF1 PLT.AF.ORM'  ", description: "Кецове, цвят розе", price: "цена: 200 лв." },
+                        jenski3:{ title: " 'Air Max 270'  ", description: "Маратонки-цвят розе", price: "цена: 310 лв." },
+                       kecove1:{ title: "  'AIR FORCE 1'  ", description: "Nike Sportswear в Зелено, Ябълка", price: "цена: 206 лв." },
+                        kecove2:{ title: "  'TECH HERA' ", description: "Nike Sportswear в бледорозово", price: "цена: 200 лв." },
+                        kecove3:{ title: "  'BLAZER ROAM'  ", description: "Nike Sportswear черно и синьо високи", price: "цена: 350 лв." },
+                        aks1:{ title: "  'Ръкавици Nike'  ", description: "'Ръкавици Nike в черно'", price: "цена: 30 лв." },
+                        aks2:{ title: "  'NIKE ЛЕНТА SWOOSH'  ", description: "'Лента в розово'", price: "цена: 30 лв." },
+                        aks3:{ title: "  Nike Sportswear Раница 'Heritage'  ", description: "Платнена и удобна", price: "цена: 60 лв." },
+                         akses1:{ title: " 'Nike Sportswear Чанта'  ", description: "Тип за през рамо", price: "цена: 80 лв." },
+                         akses2:{ title: " 'Nike Sportswear Шапка с козирка'  ", description: "Черна Шапка", price: "цена: 40 лв." },
+                          akses3:{ title: " 'Nike Sportswear Спортни чорапи 'Everyday Plus''  ", description: "Чорапи телесен цвят и капучино", price: "цена: 15 лв." },
+                          dress1:{ title: " 'Adicolor Classics Beckenbauer' ", description: "Горнище-зелено оригинал", price: "цена:89 лв." },
+                          dress2:{ title: "ADIDAS ORIGINALS Тениска 'Adicolor Classics' ", description: "Тениска синя", price: "цена:50 лв."},
+                           dress3:{ title: "ADIDAS ORIGINALS Тениска", description: "Тениска Люляк", price: "цена:60 лв."},
+                           dreh1:{ title: "'ADIDAS ORIGINALS Тениска 'Adicolor' '", description: "Тениска черна", price: "цена:70 лв."},
+                           dreh2:{ title: "ADIDAS ORIGINALS шорти", description: "цветни шорти", price: "цена:56 лв."},
+                            dreh3:{ title: "'Tapered Leg Панталон'", description: "Зелен анцуг", price: "цена:79 лв."},
+                             dre1:{ title: "'Tapered Leg Панталон 'Trefoil Essentials' '", description: "сив анцуг памук", price: "цена:90 лв."},
+                              dre2:{ title: "'ADIDAS ORIGINALS Regular Панталон' ", description: "Син панталон", price: "цена:105 лв."},
+                               dre3:{ title: "'ADIDAS ORIGINALS Преходно яке '100T' ' ", description: "Черно яке", price: "цена:300 лв."},
+                               obu1:{ title: "' 'SAMBA XLG' ' ", description: "Обувки велур", price: "цена:230 лв."},
+                               obu2:{ title: " 'Megaride черни' ", description: "Маратонки черни ,топ 2025", price: "цена:390 лв."},
+                               obu3:{ title: " 'Forum' ", description: "Бели кецове с черно", price: "цена:300 лв."},
+                                kec1:{ title: " 'Adistar Cushion' ", description: "Спортни обувки", price: "цена:270 лв."},
+                                 kec2:{ title: " 'Forum 84 ", description: "Кецове бежаво", price: "цена:260 лв."},
+                                  kec3:{ title: "ADIDAS ORIGINALS Ниски маратонки 'Megaride ", description: "Бели маратонки ,топ 2025", price: "цена:300 лв."},
+                                  mar1:{ title: "' Ниски маратонки 'RIVALRY'  ", description: "Кецове", price: "цена:260 лв."},
+                                   mar2:{ title: " 'NMD R1' ", description: "Обувки бежово и червено", price: "цена:180 лв."},
+                                   mar3:{ title: " Campus 00s ", description: "Морско синьо, велур", price: "цена:260 лв."},
+                                   cap1:{ title: " Шапка с козирка 'CLASS' ", description: "Тъмно-зелена", price: "цена:90 лв."},
+								   cap2:{ title: " Чанта за кръста 'Pride' ", description: "Черна практична чантичка", price: "цена:105 лв."},
+                                   cap3:{ title: " ADIDAS ORIGINALS чорапи ", description: "Черни чорапи с лого", price: "цена:30 лв."},
+                                  chas1:{ title: " ADIDAS ORIGINALS Аналогов часовник 'PROJECT TWO' ", description: "Aналогов,цвят зелен", price: "цена:200 лв."},
+								  chas2:{ title: "ADIDAS ORIGINALS Раница ", description: "Раница, морско синьо", price: "цена:130 лв."},
+                                 chas3:{ title: " ADIDAS ORIGINALS Слънчеви очила в Черно ", description: "Очила,защитни", price: "цена:220 лв."},
+								 dres1:{ title: "Adicolor Тениска  ", description: "Зелена,памук", price: "цена:90 лв."},
+                                 dres2:{ title: " Essentials потник ", description: "Розов", price: "цена:60 лв."},
+                                 dres3:{ title: " ADIDAS ORIGINALS Тениска", description: "Черна тениска с детайли", price: "цена:90 лв."},
+                               dres4:{ title: " 'Тениска '3-Streifen'", description: "Къса тениска в червено", price: "цена:70 лв."},
+                               dres5:{ title: "' Панталон 'Adibreak'", description: "'Панталон в синьо", price: "цена:100 лв."},
+                               dres6:{ title: " Skinny Fit Клин 'Adicolor Classics'", description: "Зелен клин", price: "цена:85лв."},
+                               dres7:{ title: " 'ADIDAS ORIGINALS Преходно яке'", description: "Яке в тъмнозелено", price: "цена:250лв."},
+                              dres8:{ title: " Зимно яке 'Adicolor'", description: "Яке в светлолилаво", price: "цена:300лв."},
+                              dres9:{ title: "' Tapered Leg Панталон'", description: "Анцуг с разцветка", price: "цена:60лв."},
+                              ob1:{ title: "Ниски маратонки 'Gazelle'", description: "Черни кецове", price: "цена:120лв."},
+							  ob2:{ title: "Ниски маратонки 'Campus 00s'", description: "Червени кецове", price: "цена:120лв."},
+                              ob3:{ title: "Маратонки 'TEMPER RUN 2' ", description: "Маратонки за бягане", price: "цена:200лв."},
+                              ob4:{ title: "Ниски маратонки 'Gazelle Bold'", description: "Червени кецове", price: "цена:280лв."},
+                              ob5:{ title: "Ниски маратонки 'Hyperturf Adventure'", description: "Бежови маратонки", price: "цена:130лв."},
+							  ob6:{ title: "Чехли 'Adilette Lite'", description: "Розови чехли с лого", price: "цена:70лв."},
+                              ob7:{ title: "Ниски маратонки 'CAMPUS 00s' ", description: "Кецове в розово и черно", price: "цена:150лв."},
+                              ob8:{ title: "Ниски маратонки 'ADIFOM MEGARIDE'", description: "Черни маратонки", price: "цена:300лв."},
+                              ob9:{ title: "Ниски маратонки 'Forum'", description: "Кецове бяло и розово", price: "цена:130лв."},
+                              ak1:{ title: "'AIRLINER' чанта", description: "Чанта за през рамо тип преметка 'AIRLINER'", price: "цена:100лв."},
+                              ak2:{ title: "ADIDAS ORIGINALS Шапка", description: "Шапка в розово", price: "цена:50лв."},
+                              ak3:{ title: "Аналогов часовник", description: "Часовник Adidas", price: "цена:260лв."},
+							  ak4:{ title: "Раница 'Adicolor'", description: "Розова чанта", price: "цена:120лв."},
+                              ak5:{ title: "ADIDAS ORIGINALS Шапка с козирка", description: "Шапка в бяло", price: "цена:60лв."},
+                              ak6:{ title: "ADIDAS ORIGINALS Слънчеви очила", description: "Очила със защита в сиво", price: "цена:80лв."},
+                   
+                   
+                  
+             
+              
+               
+            
+        };
+
+        function showModal(productId) {
+            const modal = document.getElementById("product-modal");
+            const data = modalData[productId];
+            document.getElementById("modal-title").textContent = data.title;
+            document.getElementById("modal-description").textContent = data.description;
+            document.getElementById("modal-price").textContent = data.price;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("product-modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин за дрехи</title>
+    <style>
+        /* Основни стилове за сайта */
+        #main-nav {
+    background-color: #000000; /* Сменете с желания цвят */
+    color:  white; /* Цвят на текста */
+    padding: 10px 0; /* Отстояния вътре в лентата */
+    text-align: center; /* Центрира съдържанието */
+}
+
+#main-nav ul {
+    list-style-type: none; /* Премахва булетите пред елементите */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Подрежда елементите в редица */
+    justify-content: center; /* Центрира елементите хоризонтално */
+}
+
+#main-nav ul li {
+    margin: 0 15px; /* Разстояние между елементите на менюто */
+}
+
+#main-nav ul li a {
+    text-decoration: none; /* Премахва подчертаването на текста */
+    color: white; /* Цвят на връзките */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#main-nav ul li a:hover {
+    color: #ADD8E6; /* Цвят при задържане с мишката */
+}
+
+        #main-header {
+    background-image: url('https://i.postimg.cc/PxLBy4r3/photo-collage-png.png'); /* Сложете пътя до вашата снимка */
+    background-size: cover; /* Снимката запълва изцяло секцията */
+    background-position: center; /* Центрира снимката */
+    background-repeat: no-repeat; /* Предотвратява повторение на снимката */
+    color: white; /* Бял текст за контраст */
+    text-align: center; /* Центрира текста */
+    padding: 50px 20px; /* Добавя вътрешни отстояния */
+    height: 300px; /* Височина на заглавната част */
+    display: flex; /* За центриране на съдържанието вертикално */
+    flex-direction: column;
+    justify-content: center;
+}
+        
+        .site-logo {
+    width: 350px; /* Регулирайте ширината */
+    height: 100px; /* Регулирайте височината */
+    object-fit: contain; /* Запазва пропорциите, без изрязване */
+    display: block;
+    margin: 0 auto;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f4f4f4, #ffffff);
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6600;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #nike, #adidas, #puma, #guess, #calvin-klein {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            bottom: 0;
+        }
+
+        /* Стилове за секцията Nike */
+      
+        #nike {
+            background: #e8f0fe;
+        }
+
+        #nike img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.product-image {
+    width: 200px; /* Ширина на изображението */
+    height: auto; /* Височината се изчислява автоматично спрямо съотношението */
+    border-radius: 5px; /* Заобляне на краищата, ако желаеш */
+    object-fit: cover; /* Изрязване, за да запази пропорциите */
+}
+
+
+.product {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+        /* Стилове за секцията Guess */
+        #guess {
+            background: #fce4ec;
+        }
+
+        #guess img {
+            width: 320px;
+            height: 240px;
+            border-radius: 10px;
+        }
+
+        /* Стилове за секцията Calvin Klein */
+        #calvin-klein {
+            background: #e3f2fd;
+        }
+
+        #calvin-klein img {
+            width: 320px;
+            height: 240px;
+            border-radius: 10px;
+        }
+
+        /* Анимация */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Responsive дизайн */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <section id="nike">
+        <h2>Nike</h2>
+        <p>Разгледайте нашите дрехи, обувки и аксесоари от Nike.</p>
+        <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/hubs/2022_02_49_fl_onl_nike_refresh/05_final_output_files/2022_02_49_FL_ONL_Nike_refresh_group_800x800.jpg" alt="Nike дрехи" width="300" height="200" >
+    </section>
+
+    <section id="adidas">
+        <h2>Adidas</h2>
+        <p>Открийте стилни продукти от Adidas.</p>
+        <img src="https://external-preview.redd.it/AtNDF07175Nfe1C-atyGPvT1YThfWTW90f1kQmPNmAM.jpg?width=640&crop=smart&auto=webp&s=701c238a417bcd78fe9cb06c5f6da1a3c1ce163c" alt="Adidas дрехи" width="300" height="200">
+    </section>
+
+    <section id="puma">
+        <h2>Puma</h2>
+        <p>Най-добрите спортни стоки от Puma.</p>
+        <img src="https://media.gq.com/photos/58c9550ade6a3459686335e2/16:9/w_2560%2Cc_limit/Puma-lead.gif" alt="Puma дрехи" width="300" height="200">
+    </section>
+
+    <section id="guess">
+        <h2>Guess</h2>
+        <p>Модерни и елегантни продукти от Guess.</p>
+        <img src="https://mediaslide-europe.storage.googleapis.com/metromodels/news_pictures/2024/05/large-1716399569-3d86451119ae119293897d96ee3cfa89.jpg" alt="Guess дрехи" width="800" height="967">
+    </section>
+
+    <section id="calvin-klein">
+        <h2>Calvin Klein</h2>
+        <p>Очаквайте скоро -> Calvin Klein.</p>
+        <img src="https://www.grazia.it/content/uploads/2024/05/CK-mobile-500x375.jpg" alt="Calvin Klein дрехи" width="300" height="300" >
+    </section>
+
+    <section id="promotions">
+        <h2>Промоции</h2>
+        <p>Използвайте нашият промоКОД за отстъпка за избрани артикули - "MP7" .</p>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <p>Свържете се с нас: MPOutlet@example.com</p>
+    </section>
+	
+	<footer>
+	<p>&copy; 2025 Outlet</p>
+	</footer>
+
+    
+</body>
+</html>
