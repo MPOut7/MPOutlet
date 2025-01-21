@@ -7,21 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<button id="scroll-to-top" title="Върни се в началото">&#8679;</button>
     <!-- Заглавна лента -->
     <header id="main-header" >
         <img src="https://i.postimg.cc/rptbrJ2p/mp.png" alt="Лого MPOutlet" class="site-logo">
 
-        <nav id="main-nav" >
-            <ul>
-                <li><a href="#nike">Nike</a></li>
-                <li><a href="#adidas">Adidas</a></li>
-                <li><a href="#puma">Puma</a></li>
-                <li><a href="#guess">Guess</a></li>
-                <li><a href="#calvin-klein">Calvin Klein</a></li>
-                <li><a href="#promotions">Промоции</a></li>
-                <li><a href="#contacts">Контакти</a></li>
+       <nav id="main-nav">
+    <ul>
+        <li>
+            <a href="#nike">Nike</a>
+            <ul class="dropdown">
+                <li><a href="#nike-men">Мъже</a></li>
+                <li><a href="#nike-women">Жени</a></li>
             </ul>
-        </nav>
+        </li>
+        <li>
+            <a href="#adidas">Adidas</a>
+            <ul class="dropdown">
+                <li><a href="#adidas-men">Мъже</a></li>
+                <li><a href="#adidas-women">Жени</a></li>
+            </ul>
+        </li>
+        <li><a href="#puma">Puma</a></li>
+        <li><a href="#guess">Guess</a></li>
+        <li><a href="#calvin-klein">Calvin Klein</a></li>
+        <li><a href="#promotions">Промоции</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+    </ul>
+</nav>
     </header>
 
     <!-- Секция Nike -->
@@ -892,6 +905,27 @@
     
     
       <script>
+     // Изберете бутона
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+// Показване/Скриване на бутона при скрол
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Показва се след 200px скрол
+        scrollToTopButton.style.display = 'flex';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Действие при натискане на бутона
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0, // Скрол към началото
+        behavior: 'smooth' // Плавно превъртане
+    });
+}); 
+      
+      
      const modalData = {
       teniska1: { title: "Суичър Nike", description: "Памук", price: "Цена: 169 лв" },
        teniska2: { title: "Суичър Nike", description: "Памук", price: "Цена: 140 лв" },
@@ -1032,6 +1066,31 @@
     <title>Магазин за дрехи</title>
     <style>
         /* Основни стилове за сайта */
+        #scroll-to-top {
+    position: fixed; /* Закрепен на екрана */
+    bottom: 20px; /* Разстояние от дъното */
+    right: 20px; /* Разстояние от дясната страна */
+    background-color: #000; /* Черен фон */
+    color: #fff; /* Бял текст */
+    border: none;
+    border-radius: 50%; /* Закръглена форма */
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Скрит по подразбиране */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Пред всички елементи */
+}
+
+#scroll-to-top:hover {
+    background-color: #444; /* По-светъл фон при задържане */
+}
+        
+        
+        
         #main-nav {
     background-color: #000000; /* Сменете с желания цвят */
     color:  white; /* Цвят на текста */
@@ -1061,6 +1120,53 @@
 #main-nav ul li a:hover {
     color: #ADD8E6; /* Цвят при задържане с мишката */
 }
+/* Основен стил за навигацията */
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#main-nav li {
+    position: relative; /* За позициониране на подменютата */
+}
+
+#main-nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: #000;
+}
+
+#main-nav .dropdown {
+    display: none; /* Скрий подменюто по подразбиране */
+    position: absolute;
+    background: #000;
+    padding: 10px;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    top: 100%; /* Позициониране под главното меню */
+    left: 0;
+    z-index: 10;
+}
+
+#main-nav .dropdown li {
+    margin: 5px 0;
+}
+
+/* Показване на падащото меню при задържане */
+#main-nav li:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
+
 
         #main-header {
     background-image: url('https://i.postimg.cc/PxLBy4r3/photo-collage-png.png'); /* Сложете пътя до вашата снимка */
