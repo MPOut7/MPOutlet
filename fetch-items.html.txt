@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Извличане на дрехи</title>
+</head>
+<body>
+  <h2>Списък с дрехи</h2>
+  <ul id="itemsList"></ul>
+
+  <script>
+    const url = "const url = "https://thsi_38974277.thsite.top/getrecord.php";
+";
+
+    const formData = new FormData();
+    formData.append("id", 0); // 0 = вземи всички
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById("itemsList");
+
+      // Ако върне само един запис:
+      if (data.name) {
+        const li = document.createElement("li");
+        li.textContent = data.name;
+        list.appendChild(li);
+      } else {
+        // Ако върне масив от записи
+        data.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item.name;
+          list.appendChild(li);
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Грешка при заявката:", error);
+    });
+  </script>
+</body>
+</html>
